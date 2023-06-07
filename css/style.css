@@ -5,6 +5,7 @@ body {
 
   padding: 20px;
   font-size: 20px;
+  background-color: rgb(236, 235, 142);
 }
 
 * {
@@ -18,7 +19,7 @@ a {
 
 input,
 textarea {
-  border: 3px solid yellowgreen;
+  border: 3px solid rgb(97, 144, 3);
   border-radius: 8px;
   width: 100%;
   padding: 10px;
@@ -28,10 +29,88 @@ textarea {
 }
 
 button {
-  border: 3px solid yellowgreen;
+  border: 3px solid rgb(97, 144, 3);
   border-radius: 8px;
-  background-color: yellowgreen;
+  background-color: rgb(97, 144, 3);
   font-size: 25px;
   color: yellow;
   padding: 10px 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 4px solid rgb(163, 162, 84);
+  background-color: rgb(238, 235, 87);
+  border-radius: 60px;
+  padding: 10px 40px;
+  box-shadow: 10px 10px 15px rgb(129, 129, 93);
+}
+.header .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px; /*flex elemanlarinin arasina bosluk koyar*/
+}
+
+.content .about {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  padding: 40px;
+  gap: 40px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about img {
+  width: 500px;
+  height: 500px;
+  border: 5px solid rgb(97, 144, 3);
+  border-radius: 250px;
+  box-shadow: 10px 10px 15px rgb(3, 49, 8);
+}
+
+.about .description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  border-top: 5px dotted gray;
+  margin: 20px;
+}
+
+.section {
+  width: 60%;
+}
+.section .card {
+  display: flex;
+  border: 5px solid rgb(97, 144, 3);
+  border-radius: 50px;
+  background-color: yellow;
+  margin: 40px;
+  padding: 40px;
+  box-shadow: 10px 10px 15px rgb(3, 49, 8);
+}
+
+.section .card .left {
+  flex: 2;
+  flex-direction: center;
+}
+.section .card .right {
+  flex: 1;
+  flex-direction: center;
+}
+h1 {
+  text-shadow: 10px 10px 15px rgb(97, 144, 3);
+  font-size: 50px;
 }
